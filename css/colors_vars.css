@@ -8,9 +8,20 @@
     --almost_black_dark: calc(100 - var(--almost_white_bright));
 
     /** Color Elements */
-    --color-primary-hue: 120;
-    --color-secondary-hue: calc(var(--color-primary-hue) + var(--color_big_step) + var(--color_big_step));
+    --color-primary-hue: 246;
+
+
+    /** overwrite values
+        --color-secondary-hue: calc(var(--color-primary-hue) + var(--color_big_step) + var(--color_big_step));
+    */
+    --color-secondary-hue: 354;
+
+    /**
     --color-tertiary-hue: calc(var(--color-secondary-hue) + var(--color_big_step) + var(--color_big_step));
+*/
+
+    --color-tertiary-hue: 162;
+
     --primary_bright: 26%;
     --primary_dark: 18%;
     --primary_container_bright: 36%;
@@ -124,7 +135,7 @@
     --color-primary: #016e00;
 
     /* main colors */
-    --color-primary: hsla(120, 100%, 37%, 1);
+    --color-primary: hsla(var(--color-primary-hue), 100%, 37%, 1);
 
 
 
@@ -185,18 +196,14 @@
     --color-icon-secondary: inherit;
 
 
+    --content_wrapper_gradient: linear-gradient(to right bottom, hsl(40, 50%, 80%), hsl(182, 50%, 88%), hsl(187, 50%, 88%), hsl(194, 50%, 90%), hsl(180, 50%, 95%), hsl(183, 50%, 96%), hsl(191, 50%, 97%), hsl(200, 50%, 98%), hsl(188, 100%, 94%), hsl(183, 50%, 89%), hsl(181, 50%, 84%), hsl(181, 50%, 79%));
+
+
     /** Default Colors (no theme */
     /** Primary  */
     --color_primary: var(--color-primary);
 
-
-    --content_wrapper_gradient: linear-gradient(to right bottom, hsl(79, 100%, 80%), hsl(112, 100%, 88%), hsl(150, 100%, 88%), hsl(170, 100%, 90%), hsl(180, 100%, 95%), hsl(183, 100%, 96%), hsl(191, 100%, 97%), hsl(200, 100%, 98%), hsl(188, 100%, 94%), hsl(183, 100%, 89%), hsl(181, 100%, 84%), hsl(181, 100%, 79%));
-
-
     /** Secondary */
-
-
-
 
 
     --color-error: #ba1a1a;

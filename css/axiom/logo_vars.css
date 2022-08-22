@@ -1,0 +1,8 @@
+:root{
+    --logo_line_height: 1.5;
+    --logo_font_family: var(--font_sans_serif);
+    --logo_font_size: 16px;
+    --logo_font_style: normal;
+    --logo_font_variant: normal;
+    --logo_border_radius: var(--border_radius);
+}

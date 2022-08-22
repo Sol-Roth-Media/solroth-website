@@ -1,0 +1,48 @@
+/**
+  Axiom01 Framework Variables
+ */
+
+:root {
+    /** basic sizes to use for creating consistent padding / margin / gap and sizing across many different elements.*/
+    --space_none: 0px;
+    --space_tiny: 1px;
+    --space_small: 2px;
+    --space_normal: 4px;
+    --space_medium: 8px;
+    --space_medium_large: 12px;
+    --space_large: 24px;
+    --space_xlarge: 36px;
+    --space_xxlarge: 48px;
+    --space_extreme: 98px;
+
+    /** Universal Variables **/
+    --padding_tiny: var(--space_tiny);
+    --padding_small: var(--space_small);
+    --padding: var(--space_normal);
+    --padding_medium: var(--space_medium);
+    --padding_medium_large: var(--space_medium_large);
+    --padding_large: var(--space_large);
+    --padding_xlarge: var(--space_xlarge);
+    --padding_xxlarge: var(--space_xxlarge);
+
+    /** Universal Variables **/
+    --margin_tiny: var(--space_tiny), auto, var(--space_tiny), auto;
+    --margin_small: var(--space_small), auto, var(--space_small), auto;
+    --margin: var(--space_normal), auto, var(--space_normal), auto;
+    --margin_medium: var(--space_medium), auto, var(--space_medium), auto;
+    --margin_medium_large: var(--space_medium_large), auto, var(--space_medium_large), auto;
+    --margin_large: var(--space_large), auto, var(--space_large), auto;
+    --margin_xlarge: var(--space_xlarge), auto, var(--space_xlarge), auto;
+    --margin_xxlarge: var(--space_xxlarge), auto, var(--space_xxlarge), auto;
+
+    --reading_with: 1200px;
+    --width: 100%;
+    --height: 100%;
+    --border-radius: 12px;
+    --line_height: 1.5;
+    --font_family: var(--font_sans_serif);
+    --font_family_narrow: "Arial Narrow";
+
+
+}
+

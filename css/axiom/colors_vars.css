@@ -1,0 +1,217 @@
+
+:root, html[data-theme='light'], .light-theme {
+
+    /** Color Utilities **/
+    --color_big_step: 27;
+    --color_small_step: 9;
+    --almost_white_bright: 98%;
+    --almost_black_dark: calc(100 - var(--almost_white_bright));
+
+    /** Color Elements */
+    --color-primary-hue: 120;
+    --color-secondary-hue: calc(var(--color-primary-hue) + var(--color_big_step) + var(--color_big_step));
+    --color-tertiary-hue: calc(var(--color-secondary-hue) + var(--color_big_step) + var(--color_big_step));
+    --primary_bright: 26%;
+    --primary_dark: 18%;
+    --primary_container_bright: 36%;
+    --container_brightness: calc(100% - var(--primary_dark));
+
+    --color-primary-saturation: 100%;
+    --color-primary-light: 28%;
+    --color-primary-dark: 18%;
+    --near-black: 4%;
+    --color_primary_alpha: 1;
+    --mono_saturation: 0%;
+
+    /** Surface Colors */
+    --color_surface: hsla(0, 0%, 0%, 1);
+    --color_on_surface: hsla(0, 0%, 100%, 1);
+    --color_surface_invert: hsla(0, 0%, 0%, 1);
+    --color_on_surface_invert: hsla(0, 0%, 100%, 1);
+
+    /** Color on Outline */
+    --color_on_outline: white;
+
+    /** Primary  */
+    --color-primary: hsla(var(--color-primary-hue), 100%, var(--primary_bright), 1);
+    --color-on-primary: hsla(var(--color-primary-hue), 100%, 98%, 1);
+    --color-primary-container: hsla(calc(var(--color-primary-hue) - var(--color_small_step)), 100%, var(--primary_dark), 1);
+
+    --color-primary-container-darker: hsla(calc(var(--color-primary-hue) - var(--color_small_step)), 100%, var(--near-black), 1);
+    --color-on-primary-container: hsla(calc(var(--color-primary-hue) - var(--color_small_step) - var(--color_small_step)), 100%, var(--container_brightness), 1);
+
+    /** Mono **/
+    /** Primary  */
+    --color-primary-mono: hsla(var(--color-primary-hue), var(--mono_saturation), var(--primary_bright), 1);
+    --color-on-primary-mono: hsla(var(--color-primary-hue), var(--mono_saturation), 98%, 1);
+    --color-primary-container-mono: hsla(calc(var(--color-primary-hue) - var(--color_small_step)), var(--mono_saturation), var(--primary_dark), 1);
+    --color-on-primary-container-mono: hsla(calc(var(--color-primary-hue) - var(--color_small_step) - var(--color_small_step)), var(--mono_saturation), var(--container_brightness), 1);
+
+
+    /** Secondary */
+    /** Primary  */
+    --color-secondary: hsla(var(--color-secondary-hue), 100%, var(--primary_bright), 1);
+    --color-on-secondary: hsla(var(--color-secondary-hue), 100%, 98%, 1);
+    --color-secondary-container: hsla(calc(var(--color-secondary-hue) - var(--color_small_step)), 100%, var(--primary_dark), 1);
+    --color-on-secondary-container: hsla(calc(var(--color-secondary-hue) - var(--color_small_step) - var(--color_small_step)), 100%, var(--container_brightness), 1);
+
+    /** Tertiary
+    --color-tertiary:  hsla(200, 100%, 22%, 1);
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #bcebee;
+    --color-on-tertiary-container: #002022;
+    /** */
+
+    /** Secondary */
+    /** Primary  */
+    --color-tertiary: hsla(var(--color-tertiary-hue), 100%, var(--primary_bright), 1);
+    --color-on-tertiary: hsla(var(--color-tertiary-hue), 100%, 98%, 1);
+    --color-tertiary-container: hsla(calc(var(--color-tertiary-hue) - var(--color_small_step)), 100%, var(--primary_dark), 1);
+    --color-on-tertiary-container: hsla(calc(var(--color-tertiary-hue) - var(--color_small_step) - var(--color_small_step)), 100%, var(--container_brightness), 1);
+
+
+
+    /** Semantec Colors Inspired by Adobe Spectrum **/
+    /** Negative **/
+    --color-negative: #ba1a1a;
+    --color-on-negative: #ffffff;
+    --color-negative-container: #ffdad6;
+    --color-on-negative-container: #410002;
+
+    /** Positive **/
+    --color-positive: #00c005;
+    --color-on-positive: #ffffff;
+    --color-positive-container: #E6FFD6FF;
+    --color-on-positive-container: #004109;
+
+    /** Informative **/
+    --color-informative: #1a27ba;
+    --color-on-informative: #ffffff;
+    --color-informative-container: #d6e0ff;
+    --color-on-informative-container: #000b41;
+
+    /** Notice **/
+    --color-notice: #f67c2a;
+    --color-on-notice: #ffffff;
+    --color-notice-container: #ffebd6;
+    --color-on-notice-container: #412700;
+
+
+    --color-outline: #73796e;
+
+    --color-background: #fefbff;
+    --color-backround-dark: #1b1b1f;
+    --color-on-background-: #1b1b1f;
+
+
+
+    --color-surface-variant: #e1e2ec;
+    --color-on-surface-variant: #44474f;
+
+    --color-inverse-surface: #303033;
+    --color-inverse-on-surface: #f2f0f4;
+    --color_off_white: #ECFDFF;
+}
+
+:root, html[data-theme="dark"], .dark-theme{
+    /** Dark Theme eventually will be here.*/
+}
+
+
+:root {
+
+    /** Default Color Scheme **/
+    --color-primary: #016e00;
+
+    /* main colors */
+    --color-primary: hsla(120, 100%, 37%, 1);
+
+
+
+    /**
+    --color-primary-light: color-mod(var(--color-primary) tint(15%));
+    --color-primary-dark: color-mod(var(--color-primary) shade(15%));
+    --color-primary-bg: color-mod(var(--color-primary) alpha(20%));
+**/
+
+
+    /** shades - generated using chroma.js - 12 steps **/
+
+    --black: #1d1d21;
+    --gray-10: #2e2e31;
+    --gray-6: #7b7a7d;
+    --gray-4: #a5a5a6;
+    --gray-3: #bbbbbc;
+    --gray-2: #d1d0d2;
+    --gray-1: #e8e7e8;
+    --white: white;
+
+    /* feedback */
+    --color-success: #88c459;
+    --color-error: #ba1a1a;
+    --color-warning: #ffd137;
+    --color-info: lightyellow;
+
+    /* typography */
+    --color-text: var(--gray-10);
+    --color-text-heading: var(--black);
+    --color-text-subtle: var(--gray-6);
+    --color-link: var(--color-primary);
+    --color-link-visited: var(--color-primary-dark);
+    --color-mark: var(--color-accent-bg);
+    --color-blockquote-border: var(--gray-2);
+
+    /* border */
+    --color-border: var(--gray-2);
+
+    /* body */
+    --color-body: var(--white);
+
+    /* forms */
+    --form-element-border: var(--color-border);
+    --form-element-border-focus: var(--color-primary);
+    --form-element-border-error: var(--color-error);
+    --form-element-bg: var(--white);
+    --form-text-placeholder: var(--gray-4);
+
+    /* buttons */
+    --btn-primary-bg: var(--color-primary);
+    --btn-primary-hover: var(--color-primary-light);
+    --btn-primary-active: var(--color-primary-dark);
+    --btn-primary-label: var(--white);
+
+    /* icons */
+    --color-icon-primary: var(--gray-4);
+    --color-icon-secondary: inherit;
+
+
+    /** Default Colors (no theme */
+    /** Primary  */
+    --color_primary: var(--color-primary);
+
+
+    --content_wrapper_gradient: linear-gradient(to right bottom, hsl(79, 100%, 80%), hsl(112, 100%, 88%), hsl(150, 100%, 88%), hsl(170, 100%, 90%), hsl(180, 100%, 95%), hsl(183, 100%, 96%), hsl(191, 100%, 97%), hsl(200, 100%, 98%), hsl(188, 100%, 94%), hsl(183, 100%, 89%), hsl(181, 100%, 84%), hsl(181, 100%, 79%));
+
+
+    /** Secondary */
+
+
+
+
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #410002;
+
+    --color-outline: #73796e;
+    --color-background: #fefbff;
+    --color-on-background-: #1b1b1f;
+    --color-surface: #fefbff;
+    --color-on-surface: #1b1b1f;
+    --color-surface-variant: #e1e2ec;
+    --color-on-surface-variant: #44474f;
+    --color-inverse-surface: #303033;
+    --color-inverse-on-surface: #f2f0f4;
+}
+
