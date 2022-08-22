@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Axiom[01] UI Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/colors_vars.css"/>
+    <link rel="stylesheet" href="./css/colors.css"/>
+    <link rel="stylesheet" href="./css/axiom_vars.css"/>
+    <link rel="stylesheet" href="./css/axiom.css"/>
+    <link rel="stylesheet" href="./css/content_vars.css"/>
+    <link rel="stylesheet" href="./css/content.css"/>
+    <link rel="stylesheet" href="./css/grid_vars.css"/>
+    <link rel="stylesheet" href="./css/grid.css"/>
+    <link rel="stylesheet" href="./css/navbar_vars.css"/>
+    <link rel="stylesheet" href="./css/navbar.css"/>
+    <link rel="stylesheet" href="./css/utility_vars.css"/>
+    <link rel="stylesheet" href="./css/utility.css"/>
+    <link rel="stylesheet" href="./css/logo_vars.css"/>
+    <link rel="stylesheet" href="./css/logo.css"/>
+    <link rel="stylesheet" href="./css/tables_vars.css"/>
+    <link rel="stylesheet" href="./css/tables.css"/>
+    <link rel="stylesheet" href="./css/forms_vars.css"/>
+    <link rel="stylesheet" href="./css/forms.css"/>
+    <link rel="stylesheet" href="./css/footer_vars.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/carousel-slider_vars.css"/>
+    <link rel="stylesheet" href="./css/carousel-slider.css"/>
+</head>
+
+<body class="axiom01">
+<!-- nav bar component -->
+<nav class="navbar">
+    <div>
+        <span>
+            <!-- <a href=""><img src="https://via.placeholder.com/120x80.png?text=Sol+Roth+Media" alt="Sol Roth Logo" /></a> -->
+            <span class="logo">
+                <small>
+                <!-- CSS Logo-->
+                  <em><!-- Unicode A Square-->&#127280;</em> xiom<span>[<span>01</span>]</span>
+                    <!-- End CSS Logo -->
+                </small>
+            </span>
+        </span>
+
+        <span>
+            <a href="">About</a>
+            <a href="">Docs</a>
+        </span>
+
+        <span>
+            <a href="#mainmenu"
+               class="menu-toggle"
+               aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <i aria-hidden="true">&#9776;</i>
+            </a>
+        </span>
+    </div>
+</nav>
+
+<nav id="mainmenu" class="navbar-menu">
+    <div>
+        <span></span>
+        <span>
+        <span class="logo">
+                <small>
+                <!-- CSS Logo-->
+                  <em><!-- Unicode A Square-->&#127280;</em> xiom<span>[<span>01</span>]</span>
+                    <!-- End CSS Logo -->
+                </small>
+            </span></span>
+        <span>
+        <a href=""
+           id="mainmenu-toggle"
+           class="menu-toggle"
+           aria-label="Close main menu">close &#10006;</a>
+    </span>
+    </div>
+    <div>
+        <span></span>
+        <span>
+            <ul>
+                <li><a href="">Introduction</a></li>
+                <li><a href="">Design and Framework Rules</a></li>
+                <li><a href="">Hiearchy and Element Specific Rules</a></li>
+                <li><a href="">Examples and Templates</a></li>
+            </ul>
+        </span>
+        <span>
+        </span>
+    </div>
+</nav>
+
+<div class="wrapper content-main-wrapper">
+    <!-- Main divider -->
+    <header>
+        <hgroup>
+            <span>
+
+              <!-- CSS Only Logo-->
+              <span class="logo-css-only">
+              <span style="font-size:42pt;font-family:Roboto,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">A</span><span
+                    style="font-size:32pt;font-family:'Roboto Mono',monospace;color:#434343;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">X</span><span
+                    style="font-size:32pt;font-family:'Roboto Mono',monospace;color:#666666;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">I</span><span
+                    style="font-size:32pt;font-family:'Roboto Mono',monospace;color:#999999;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">O</span><span
+                    style="font-size:32pt;font-family:'Roboto Mono',monospace;color:#b7b7b7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">M</span><span
+                    style="font-size:12pt;font-family:Roboto,sans-serif;color:#b7b7b7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;</span><span
+                    style="font-size:26pt;font-family:'Roboto Mono',monospace;color:#d9d9d9;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">[</span><span
+                    style="font-size:26pt;font-family:'Roboto Mono',monospace;color:#00be00;background-color:transparent;font-weight:500;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">01</span><span
+                    style="font-size:26pt;font-family:'Roboto Mono',monospace;color:#d9d9d9;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">]</span><span
+                    style="font-size:26pt;font-family:'Roboto Mono',monospace;color:#b7b7b7;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><br></span><span
+                    style="font-size:12.499999999999998pt;font-family:Consolas,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">F &nbsp;R &nbsp;A &nbsp;M &nbsp;E &nbsp;W &nbsp;O &nbsp;R &nbsp;K</span>
+                </span>
+
+              <p>A UI system with simple rules for designing beautiful, consistent and &#x1F525; blazingly modern <em>HTML/CSS/JS</em> apps.</p>
+            </span>
+        </hgroup>
+    </header>
+
+    <main class="wrapper">
+        <!-- Main Content -->
+
+        <section class="wrapper">
+
+            <table>
+                <thead>
+                <tr>
+                    <th class="table-header" colspan="100">
+                        <span class="h3">Buttons</span>
+                        <!-- you can't use an h1 here, but we can use the class to match size-->
+                        <p>Button elements with primarcy colors and icon styling.</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Location or class</th>
+                    <th>Normal</th>
+                    <th>Outline</th>
+                    <th>Small</th>
+                    <th>Strong</th>
+                    <th>Icon</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>Anywhere / none</td>
+                    <td>
+                        <button><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="outline"><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td><small>
+                        <button><i>&#9733;</i> Press&nbsp;Me</button>
+                    </small></td>
+                    <td><strong>
+                        <button><i>&#9733;</i> Press&nbsp;Me</button>
+                    </strong></td>
+                    <td>
+                        <button class="icon"><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Subtle</td>
+                    <td>Anywhere / none</td>
+                    <td>
+                        <button class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="subtle outline"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td><small>
+                        <button class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </small></td>
+                    <td><strong>
+                        <button class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </strong></td>
+                    <td>
+                        <button class="subtle icon"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Positive</td>
+                    <td>Anywhere</td>
+                    <td>
+                        <button class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="positive outline"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td><small>
+                        <button class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </small></td>
+                    <td><strong>
+                        <button class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </strong></td>
+                    <td>
+                        <button class="positive icon"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Negative</td>
+                    <td>Anywhere</td>
+                    <td>
+                        <button class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="negative  outline"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                    <td><small>
+                        <button class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </small></td>
+                    <td><strong>
+                        <button class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </strong></td>
+                    <td>
+                        <button class="negative icon"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Notice</td>
+                    <td>Anywhere</td>
+                    <td>
+                        <button class="notice"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="notice  outline"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td><small>
+                        <button class="notice"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </small></td>
+                    <td><strong>
+                        <button class="notice"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </strong></td>
+                    <td>
+                        <button class="notice icon"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Info</td>
+                    <td>Anywhere</td>
+                    <td>
+                        <button class="informative"><i>&#9432;</i> Press Me</button>
+                    </td>
+                    <td>
+                        <button class="informative outline"><i>&#9432;</i> Press Me</button>
+                    </td>
+                    <td><small>
+                        <button class="informative"><i>&#9432;</i> Press Me</button>
+                    </small></td>
+                    <td><strong>
+                        <button class="informative"><i>&#9432;</i> Press Me</button>
+                    </strong></td>
+                    <td>
+                        <button class="informative icon"><i>&#9432;</i> Press Me</button>
+                    </td>
+                </tr>
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <td colspan="7">There is no <pre>:visited state</pre> included because it's not valuable for most
+                        use cases
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+
+            <table>
+                <thead>
+                <tr>
+                    <th class="table-header" colspan="100">
+                        <span class="h3">Button States</span>
+                        <!-- you can't use an h1 here, but we can use the class to match size-->
+                        <p>Implemented button states</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Hover</th>
+                    <th>Focus</th>
+                    <th>Active</th>
+                    <th>Disabled</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <button class="hover"><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="focus"><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="active"><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button disabled><i>&#9733;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Subtle</td>
+                    <td>
+                        <button class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button disabled class="subtle"><i>&#9711;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Positive</td>
+                    <td>
+                        <button class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button disabled class="positive"><i>&#10003;</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Negative</td>
+                    <td>
+                        <button class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button disabled class="negative"><i>❕</i> Press&nbsp;Me</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Notice</td>
+                    <td>
+                        <button class="notice"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="notice"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button class="notice"><i>&#9888;</i> Press&nbsp;Me</button>
+                    </td>
+                    <td>
+                        <button disabled class="notice"><i>&#9888;</i> Press Me</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Info</td>
+                    <td>
+                        <button class="informative"><i>&#9432;</i> Press Me</button>
+                    </td>
+                    <td>
+                        <button class="informative"><i>&#9432;</i> Press Me</button>
+                    </td>
+                    <td>
+                        <button class="informative"><i>&#9432;</i> Press Me</button>
+                    </td>
+                    <td>
+                        <button class="informative" disabled><i>&#9432;</i> Press Me</button>
+                    </td>
+                </tr>
+
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <td colspan="5">There is no <pre>:visited state</pre> included because it's not valuable for most use cases
+                    </td>
+                </tfoot>
+
+            </table>
+        </section>
+
+
+        <article>
+            <section>
+                <h2 style="margin-left: auto; margin-right: auto;">Axiom 01 Core Truths<br/> <small>Rules to follow when
+                    desining and coding User Interfaces</small></h2>
+                <p>
+                    Axiom.
+                    Rules that set you free. The only CSS Framework with rules to tame the madness.
+                    Most CSS frameworks contains tools, but no direction or rules on how and how not to use them. They
+                    follow no standard axioms for design and layout. Axioms are things that are presumed to be tree,
+                    with which other things can be derived or determien through logic. Axiom, is a framework that
+                    provides solid rules and design direction to create a beautiful free experience with extremely easy
+                    to understand clean code.
+                </p>
+
+                <ul>
+                    <li>No rules are absolute (haha!) - Don't make stupid decisions or work arounds if you need to do
+                        something or need a one off or edge case just to not violate these rules, these should be
+                        treated as strict guideliens that should only be broken is there is a solid need. When in doubt,
+                        follow all of them to the T and you'll design much fster with a higher quailty and consistency
+                        rate (and way more enjoyable1).
+                    </li>
+
+                    <li>Elements can contain like elements or any element father down the Axiom Element Heirarchy Tree.
+                    </li>
+                    <li>Behaviors should dictate class names</li>
+
+                    <li>Minimalism Additions to should be added for custimizations, not overriding or changing values.
+                    </li>
+
+                    <li>Default classes and styles should work directly on the elements and not require presentational
+                        classes
+                    </li>
+                    <li>If html can't be changed, then the class "section" or "article" or the
+                        geneihttps://sol-roth-media.github.io/axiom/c content should be
+                        applied to all content.
+                    </li>
+                    \
+                    <li>All buttons are assumed to be primary, no designation for default. No extra code for defaults.
+                        Everything is relative to the tree default.
+                    </li>
+                    <li>All like elements (structure) should have the EXACT same horizontal and vertical alignment.
+                        Extra classes should be used to adjust the default alignment. (divs, articles, etc etc)
+                    </li>
+                </ul>
+
+                <h2>Axiom 01 Princials and Desgin Philosphy</h2>
+                <ul>
+                    <li></li>
+                </ul>
+
+            </section>
+            <section>
+                <h2>Hierachy and Element Specific Rules</h2>
+                <ul>
+                    <li>
+                        <strong>Dividers (Layout and programatic sectioning)</strong>
+                        <ul>
+                            <li>Dividers should not directly contain content, they should contain other dividers or
+                                containers. They should be grid, flexbox or block display.
+                            </li>
+                            <ul><strong>Sample Element List</strong>
+                                <li>&lt; div &gt;</li>
+                                <li>&lt; main &gt;</li>
+                                <li>&lt; footer &gt;</li>
+                                <li>&lt; nav &gt;</li>
+                                <li>&lt; header &gt;</li>
+                            </ul>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <strong>Containers (Large Content and content sectioning)</strong>
+                        <ul>
+                            <li> All containers should be block display, or inline-block display. When possible content
+                                sectioning should be used for containers and all related styles should use the root
+                                content element
+                            </li>
+                            <ul><strong>Sample Element List</strong>
+                                <em>content sectioning elements - non-exhaustive list</em>
+                                <li>&lt; address &gt;</li>
+                                <li>&lt; article &gt;</li>
+                                <li>&lt; aside &gt;</li>
+                                <li>&lt; section &gt;</li>
+                                <li>&lt; form &gt;</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li><strong>Wrappers (individual disable items - content, style and misc) </strong>
+                        <ul>
+                            <li>All wrappers should be inline display or no display property (default).</li>
+                            <ul><strong>Sample Element List</strong>
+                                <li>&lt; span &gt;</li>
+
+                            </ul>
+                        </ul>
+                    </li>
+                    <li><strong>Content</strong>
+                        Everything that's not a divider, wrapper or container.
+                        <ul><strong>Sample Element List</strong>
+                            <li>&lt; table &gt;</li>
+                            <li>&lt; p &gt;</li>
+                            <li>&lt; a &gt;</li>
+                            <li>&lt; h1 &gt; - &lt; h6 &gt;</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Typography</h2>
+                <p>Matching Typography for header sizes, makes a consistent size/font and spacing for elements.</p>
+                The .h1 – .h8 font-size utilities can be used to override an element’s default size.
+
+            </section>
+
+            <section class="multi-column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus quis eros vel vestibulum.
+                    Nulla mollis diam non dui fringilla, id consectetur leo pulvinar. Proin consectetur purus eget risus
+                    luctus pretium. Phasellus magna erat, consequat ut consequat vitae, commodo sed velit. Quisque et
+                    cursus erat, ac hendrerit lacus. Quisque molestie turpis id tortor convallis rutrum. Quisque nec
+                    nulla non ex rhoncus aliquam. Nam ut aliquet augue. Vivamus ipsum orci, dignissim eget libero vitae,
+                    tristique molestie eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Suspendisse in nulla diam.</p>
+
+                <p>Mauris ullamcorper leo vitae pulvinar tincidunt. Fusce nibh dolor, mattis sit amet aliquet sed,
+                    bibendum eget odio. Nam eget purus est. Nunc quis nulla maximus orci hendrerit feugiat id sit amet
+                    odio. Mauris lorem sem, suscipit id risus id, dignissim efficitur tellus. Praesent in commodo
+                    tortor. Vivamus mattis vestibulum metus. Nullam eget quam vestibulum, accumsan velit in, tincidunt
+                    tortor. Suspendisse rhoncus neque turpis, et placerat libero condimentum vitae.</p>
+
+                <p>Nulla neque leo, tincidunt et augue feugiat, hendrerit maximus urna. Nullam ac vulputate diam. Proin
+                    eget nisl lacinia odio dignissim blandit. Vestibulum pretium consequat justo. Mauris sapien purus,
+                    laoreet sit amet metus a, scelerisque posuere sapien. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer fringilla dui maximus arcu rhoncus vehicula. Curabitur dolor lorem,
+                    facilisis eget malesuada ut, consectetur at massa. Morbi faucibus tortor et magna pellentesque, at
+                    laoreet purus consectetur. Pellentesque quam leo, auctor sit amet justo ac, vulputate rhoncus orci.
+                    Vivamus ut feugiat dui, sit amet scelerisque eros.</p>
+
+                <p>Nam laoreet turpis sit amet tempor ullamcorper. Integer convallis felis nec neque commodo posuere.
+                    Aenean vel porta arcu. Nullam non diam tellus. Phasellus dapibus eros in tellus posuere imperdiet.
+                    Suspendisse et suscipit urna. Vestibulum quis neque in sem efficitur eleifend ut eget lacus. Aliquam
+                    posuere ex in dapibus vulputate. Morbi dictum est mi. Nulla eu ex vel ex lacinia porta in iaculis
+                    tortor. Donec viverra neque justo, ac porta tellus porta iaculis. Interdum et malesuada fames ac
+                    ante ipsum primis in faucibus. Praesent eros augue, posuere sed ex et, fringilla rutrum orci.
+                    Vivamus dapibus sed odio et mollis.</p>
+
+                <p>Praesent in leo eu nisi volutpat scelerisque eget quis lectus. Donec sapien ex, tristique quis
+                    volutpat at, finibus eu lacus. Aenean sodales, ipsum ut venenatis pharetra, ipsum mi pretium ipsum,
+                    sit amet aliquam odio dolor vitae libero. Sed velit lectus, pharetra ac augue sit amet, mollis
+                    pretium libero. Nulla a finibus tortor, at malesuada ex. In aliquet lacus eu porta pellentesque.
+                    Donec vitae nisl nisl. Nunc hendrerit varius mi nec mollis. Nullam congue augue metus, ut ultricies
+                    arcu ultricies pulvinar. Maecenas mattis felis sit amet turpis commodo maximus. Aenean id neque eget
+                    quam tristique eleifend eget nec metus.</p>
+            </section>
+
+            <section>
+                <h2>Color Scheme and Pallet <span></span></h2>
+
+                <p>Single color full scheme generation - Axiom uses math to calualte matching hues and brightness / darkness to ensure readability and
+                aesthetically matching color combinations. You only need to input a single color (you can custimize if you wish) and axiom does the rest for you. Never worry about
+                    basic color combinations again. Using a simple naming structure, "container" and "on-container", "primary", "on-primary", it's easy to always know what color whould be matched with what background color and
+                    what a container should be colored that contains other colored elements. Make color EASY!
+                </p>
+
+                <h3 class="h4">Main Colors</h3>
+
+                    <div class="grid-col-auto">
+                        <div class="color-surface-box">
+                            BG: Surface <br/> <small>Text Color: On Surface</small>
+                            <div class="color-surface-invert-box">BG: Outline <br/><small>
+                                Text Color: On Outline
+                            </small></div>
+                        </div>
+
+                        <div class="color-primary-container-mono-box">
+                            BG: Primary Mono Container <br/> <small>Text Color: On Primary Mono Container</small>
+                            <div class="color-primary-mono-box">BG: Primary Mono <br/><small>
+                                Text Color: On Primary Mono
+                            </small></div>
+                        </div>
+
+                        <div class="color-primary-container-box">
+                            BG: Primary Container <br/> <small>Text Color: On Primary Container</small>
+                            <div class="color-primary-box">BG: Primary <br/><small>
+                                Text Color: On Primary
+                            </small></div>
+                        </div>
+
+                    <div class="color-secondary-container-box">
+                        BG: Secondary Container <br/> <small>Text Color: On Secondary Container</small>
+                        <div class="color-secondary-box">BG: Secondary <br/><small>
+                            Text Color: On Secondary
+                        </small></div>
+                    </div>
+
+                    <div class="color-tertiary-container-box">
+                        Tertiary: Secondary Container <br/> <small>Text Color: On Teritary Container</small>
+                        <div class="color-tertiary-box">BG: Tertiary <br /><small>
+                            Text Color: On Tertiary
+                        </small></div>
+                    </div>
+
+                </div>
+
+                <h3 class="h4">Semantec Colors</h3>
+
+                <div class="grid-col-auto">
+                    <div class="color-negative-container-box">
+                        BG: Negative Container <br/> <small>Text Color: On Negative Container</small>
+                        <div class="color-negative-box">BG: Negative <br/><small>
+                            Text Color: On Negative
+                        </small></div>
+                    </div>
+
+                    <div class="color-positive-container-box">
+                        BG: Positive Container <br/> <small>Text Color: On Positive Container</small>
+                        <div class="color-positive-box">BG: Positive <br/><small>
+                            Text Color: On Positive
+                        </small></div>
+                    </div>
+
+                    <div class="color-informative-container-box">
+                        BG: Informative Container <br/> <small>Text Color: On Informative Container</small>
+                        <div class="color-informative-box">BG: Informative <br/><small>
+                            Text Color: On Informative
+                        </small></div>
+                    </div>
+
+                    <div class="color-notice-container-box">
+                        BG: Notice Container <br/> <small>Text Color: On Notice Container</small>
+                        <div class="color-notice-box">BG: Notice<br/><small>
+                            Text Color: On Notice
+                        </small></div>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+
+        <article>
+            Code and Syntax
+            <pre><code>
+code {
+  font-family: MyFancyCustomFont, monospace;
+  font-size: inherit;
+}
+
+/* Code in text */
+p > code,
+li > code,
+dd > code,
+td > code {
+  background: #ffeff0;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+}
+            </code></pre>
+
+        </article>
+
+        <article class="content-container-full">
+
+            <section>
+                <h2>Typography</h2>
+                <!-- Standard Headings -->
+                <h1>H0 Heading with .h0 class <small>Small Inside H1</small></h1>
+                <h1>H1 Heading or .h1 class <small>Small Inside H1</small></h1>
+                <h2>H2 Heading or .h2 class <small>Small Inside H2</small></h2>
+                <h3>H3 Heading or .h3 class <small>Small Inside H2</small></h3>
+                <h4>H4 Heading or .h4 class <small>Small Inside H4</small></h4>
+                <h5>H5 Heading or .h5 class <small>Small Inside H5</small></h5>
+                <h6>H6 Heading or .h6 class <small>Small Inside H6</small></h6>
+            </section>
+
+            <!-- Display Headers-->
+            <section>
+                <h3>Display Headers</h3>
+                <p>Use the strong tag to make headers even more prominent.</p>
+                <h1 class="h0"><strong>H0 class </strong> Test Outside</h1>
+                <h1><strong>H1 Heading </strong> Test Outside</h1>
+                <h2><strong>H2 Heading or .h2 class</strong> Test Outside</h2>
+                <h3><strong>H3 Heading or .h3 class</strong> Test Outside</h3>
+                <h4><strong>H4 Heading or .h4 class</strong> Test Outside</h4>
+                <h5><strong>H5 Heading or .h5 class</strong> Test Outside</h5>
+                <h6><strong>H6 Heading or .h6 class</strong> Test Outside</h6>
+            </section>
+
+            <!-- Other styled text tags -->
+            <strong>Bolded</strong>
+            <em>Italicized</em>
+            <a>Colored</a>
+            <u>Underlined</u>
+
+        </article>
+
+        <article>
+            <h2>Buttons</h2>
+
+
+            <!-- Standard buttons -->
+            <a class="button" href="#">Anchor button</a>
+            <button>Button element</button>
+            <input type="submit" value="submit input">
+            <input type="button" value="button input">
+
+        </article>
+
+        <article>
+            <h2>Forms</h2>
+            <!-- The above form looks like this -->
+
+            <strong>Form with fieldset and Legends</strong>
+
+            <form>
+                <fieldset>
+                    <legend>Fruit juice size</legend>
+                    <p>
+                        <input type="radio" name="size" id="size_1" value="small">
+                        <label for="size_1">Small</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="size" id="size_2" value="medium">
+                        <label for="size_2">Medium</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="size" id="size_3" value="large">
+                        <label for="size_3">Large</label>
+                    </p>
+                </fieldset>
+            </form>
+
+            <strong>Label Elements</strong>
+            <label for="name">Name:</label> <input type="text" id="name" name="user_name">
+
+            Clickable Labels:
+            <form>
+                <p>
+                    <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+                    <label for="taste_1">I like cherry</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+                    <label for="taste_2">I like banana</label>
+                </p>
+            </form>
+
+
+            <form>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    </div>
+                    <div class="six columns">
+                        <label for="exampleRecipientInput">Reason for contacting</label>
+                        <select class="u-full-width" id="exampleRecipientInput">
+                            <option value="Option 1">Questions</option>
+                            <option value="Option 2">Admiration</option>
+                            <option value="Option 3">Can I get your number?</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="exampleMessage">Message</label>
+                <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+                <label class="example-send-yourself-copy">
+                    <input type="checkbox">
+                    <span class="label-body">Send a copy to yourself</span>
+                </label>
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+            <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+            <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+        </article>
+
+        <article>
+            <h2>Lists</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>
+                    Item 2
+                    <ul>
+                        <li>Item 2.1
+                            <ul>
+                                <li>Item 3.1</li>
+                                <li>Item 3.2</li>
+                            </ul>
+                        </li>
+                        <li>Item 2.2</li>
+                    </ul>
+                </li>
+                <li>Item 3</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Code</h2>
+            <pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+
+            <!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
+
+        </article>
+
+        <article>
+            <h2>Carousel</h2>
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+
+                    </li>
+                    <li id="carousel__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+
+                    </li>
+                    <li id="carousel__slide4"
+                        tabindex="0"
+                        class="carousel__slide">
+
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1"
+                               class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2"
+                               class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3"
+                               class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide4"
+                               class="carousel__navigation-button">Go to slide 4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+        </article>
+
+
+        <article>
+            <p>Cascading Varible Driven Properies (each one inherits it's parents value, from generic to specific. Each
+                leav, inherits the value via variables by default,
+                So if you set the general padding variable to something like 5px, all elements proportially inherit a
+                matched version based on this value, each level can be
+                overwritten via variables for customizeability, but the only value needing to be set to theme a new site
+                is the main leafs on this tree.
+            </p>
+            <ul>
+                <li>
+                    <h4>Padding</h4>
+                    <ul>
+                        <li>wrapper padding</li>
+                        <li>container padding
+                            <ul>
+                                <li>article padding</li>
+                                <li>section padding</li>
+                                <li>aside padding</li>
+                            </ul>
+                        </li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Margin</h4>
+                    <ul>
+                        <li>wrapper margin</li>
+                        <li>container margin
+                            <ul>
+                                <li>article margin</li>
+                                <li>section margin</li>
+                                <li>aside margin</li>
+                            </ul>
+                        </li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Text Align</h4>
+                    <ul>
+                        <li>wrapper text_align</li>
+                        <li>container text_align
+                            <ul>
+                                <li>article text_align</li>
+                                <li>section text_align</li>
+                                <li>aside text_align</li>
+                            </ul>
+                        </li>
+                        <li></li>
+                    </ul>
+            </ul>
+        </article>
+
+
+    </main>
+</div>
+
+
+</div>
+
+<!--
+<div>
+    <aside>
+        This project used inspiration, code and downright "stole" from these other projects. Special thanks to them -
+        <ul>
+            <li><a href="https://basscss.com/">Basscss - Low-Level CSS Toolkit</a></li>
+        </ul>
+    </aside>
+</div>
+-->
+
+<footer class="footerbar">
+    <div>
+  <span>Section 1</span>
+  <span>Section 2</span>
+  <span>Section 3</span>
+    </div>
+    <div>
+        Axiom01 Framework - <a href="">Github Link</a>
+    </div>
+</footer>
+
+</body>
+</html>

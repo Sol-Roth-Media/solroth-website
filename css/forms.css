@@ -1,0 +1,149 @@
+button {
+    padding: var(--padding_medium);
+    margin: var(--margin_medium);
+    border-style: var(--border_style);
+    border-style: outset;
+    border-width: var(--border_normal);
+    border-radius: var(--border_radius);
+    color: var(--color-on-primary-container);
+    border-color: var(--color-on-primary-container);
+    background-color: var(--color-primary-container);
+    font-family: var(--font_family);
+    font-weight: 500;
+}
+
+button i{
+    padding: var(--margin);
+    min-width: 44px;
+}
+
+button:disabled,
+button[disabled]{
+    opacity: .50;
+}
+
+button.subtle{
+    background-color: #ebf4e8;
+    border-color: var(--color-outline);
+    color: var(--color-outline);
+}
+
+
+small button{
+    padding: var(--padding_small);
+    margin: var(--margin_small);
+    border-width: var(--border_small);
+    border-radius: var(--border_radius_small);
+    font-size: var(--font_size_tiny);
+}
+
+small button i{
+    content-visibility: visible;
+}
+
+button.icon{
+  font-size: 0px;
+    border-radius: var(--border_radius_large);
+}
+
+button.icon i{
+  font-size: 16px;
+}
+
+strong button{
+    padding: var(--padding_medium_large);
+    margin: var(--margin_medium_large);
+    border-width: 1px;
+    border-radium: var(--border_radius_medium);
+    font-weight: 700;
+    border-style: outset;
+    border-color: revert;
+}
+
+button.positive{
+    background-color: var(--color-positive);
+    color: var(--color-on-positive);
+}
+
+button.negative{
+    background-color: var(--color-negative);
+    color: var(--color-on-negative);
+}
+
+button.notice{
+    background-color: var(--color-notice);
+    color: var(--color-on-notice);
+}
+
+.negative-container{
+
+}
+
+button.informative{
+    background-color: var(--color-informative);
+    color: var(--color-on-informative);
+}
+
+button.outline {
+    border-color: var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+button.outline.subtle {
+    border-color: var(--color-outline);
+    background-color: transparent;
+    color: var(--color-outline);
+}
+
+button.positive.outline{
+    border-color: var(--color-positive);
+    background-color: transparent;
+    color: var(--color-positive);
+}
+
+button.negative.outline{
+    border-color: var(--color-positive);
+    background-color: transparent;
+    color: var(--color-positive);
+}
+
+button.notice.outline{
+    border-color: var(--color-notice);
+    background-color: transparent;
+    color: var(--color-notice);
+}
+
+button.negative.outline{
+    border-color: var(--color-negative);
+    background-color: transparent;
+    color: var(--color-negative);
+}
+
+button.informative.outline{
+    border-color: var(--color-informative);
+    background-color: transparent;
+    color: var(--color-informative);
+}
+
+
+button:hover, button.hover{
+    filter: brightness(115%);
+    border-style: inset;
+}
+
+button:focus, button.focus{;
+    filter: brightness(85%);
+    border-bottom-style: dotted;
+    border-bottom-color: var(--color-outline);
+
+}
+
+button:active button:active{
+    filter: brightness(75%);
+
+}
+
+button i{
+    font-style: normal;
+}
