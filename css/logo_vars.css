@@ -11,13 +11,12 @@
 @font-face {
     font-family: 'BeastBrush';
     src:
-        local('Beast-Brush'),
-        url('../fonts/Beast-Brush.otf')
-        format('opentype');
+        url('../fonts/Beast-Brush.otf') format('opentype');
+        url('../fonts/Beast-Brush.woff') format('woff');
     font-family: 'NothingYouCouldDo';
     src:
-        url('../fonts/NothingYouCouldDo-Regular.ttf')
-        format('truetype');
+        url('../fonts/NothingYouCouldDo-Regular.ttf') format('truetype');
+        url('../fonts/NothingYouCouldDo-Regular.wof') format('woff');
 }
 
 .navbar span:nth-of-type(1){
