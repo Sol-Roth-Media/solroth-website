@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonts Vars</title>
+    <style>
+        /**
+            Mobile Font Test.
+        **/
+        .logo{
+            font-family: 'BeastBrush';
+            font-size: 100px;
+            text-align: center;
+        }
+
+        @font-face {
+            font-family: 'BeastBrush';
+            src:
+                    url('../fonts/Beast-Brush.woff') format('woff');
+        url('../fonts/Beast-Brush.otf') format('opentype');
+
+            font-family: 'NothingYouCouldDo';
+            src:
+                    url('../fonts/NothingYouCouldDo-Regular.woff') format('woff');
+        url('../fonts/NothingYouCouldDo-Regular.ttf') format('truetype');
+        }
+    </style>
+</head>
+<body>
+<span class="logo">Logo Text</span>
+</body>
+</html>
