@@ -7,23 +7,21 @@
         /**
             Mobile Font Test.
         **/
+
+        @font-face {
+            font-family: 'Beast';
+            src:
+                    url('../fonts/Beast.ttf') format('truetype'),
+                    url('../fonts/Beast-Brush.otf') format('opentype')
+        }
+
         .logo{
-            font-family: 'BeastBrush';
+            font-family: 'Beast';
             font-size: 100px;
             text-align: center;
         }
 
-        @font-face {
-            font-family: 'BeastBrush';
-            src:
-               url('https://solroth.com/fonts/Beast-Brush.woff') format('woff');
-               url('https://solroth.com/fonts/Beast-Brush.otf') format('opentype');
 
-            font-family: 'NothingYouCouldDo';
-            src:
-              url('https://solroth.com/fonts/NothingYouCouldDo-Regular.woff') format('woff');
-              url('https://solroth.com/fonts/NothingYouCouldDo-Regular.ttf') format('truetype');
-        }
     </style>
 </head>
 <body>
