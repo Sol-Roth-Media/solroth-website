@@ -12,6 +12,7 @@
     font-family: 'BeastBrush';
     src:
         url('../fonts/Beast-Brush.woff') format('woff'),
+        url('../fonts/Beast.ttf') format('truetype'),
         url('../fonts/Beast-Brush.otf') format('opentype');
     font-family: 'NothingYouCouldDo';
     src:
