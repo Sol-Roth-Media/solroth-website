@@ -7,18 +7,14 @@
     --logo_border_radius: var(--border_radius_xxlarge);
 }
 
-
 @font-face {
     font-family: 'BeastBrush';
     src:
-        url('../fonts/Beast-Brush.woff') format('woff'),
-        url('../fonts/Beast.ttf') format('truetype'),
-        url('../fonts/Beast-Brush.otf') format('opentype');
-    font-family: 'NothingYouCouldDo';
-    src:
-        url('../fonts/NothingYouCouldDo-Regular.woff') format('woff'),
-        url('../fonts/NothingYouCouldDo-Regular.ttf') format('truetype')
+            url('../fonts/Beast.ttf') format('truetype'),
+            url('../fonts/Beast-Brush.otf') format('opentype'),
+            url('../fonts/Beast-Brush.woff') format('woff')
 }
+
 
 .navbar span:nth-of-type(1){
     padding: 0px !important;
@@ -49,13 +45,15 @@
     padding: var(--padding);
     font-family: "BeastBrush";
     text-shadow: 0px 1px 2px #0221a0;
-    font-size: 42px;
-    font-weight: bolder;
-    color: white;
+    font-size: 100px;
+    font-weight: normal;
+    margin-top: -36px !important;
 }
 
 .navbar-menu .logo{
-
+    font-family: "BeastBrush";
+    color: black;
+    font-size: 32px;
 }
 
 .navbar-menu .logo img{
