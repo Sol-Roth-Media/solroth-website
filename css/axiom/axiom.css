@@ -495,3 +495,7 @@ a{
   text_decoration_thickness: var(--text_decoration_thickness);
   text_decoration_style: var(--text_decoration_style);
 }
+
+.invert{
+    -webkit-filter: invert(100%);
+}
