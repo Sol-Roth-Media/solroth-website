@@ -1,0 +1,45 @@
+:root {
+    /* Primary Colors */
+    --color-primary: #e53935; /* Red */
+    --color-on-primary: #ffffff; /* White text on red */
+
+    /* Secondary Colors */
+    --color-secondary: #b71c1c; /* Dark red */
+    --color-on-secondary: #ffffff; /* White text on dark red */
+
+    /* Tertiary Colors */
+    --color-tertiary: #f44336; /* Lighter red */
+    --color-on-tertiary: #ffffff; /* White text on light red */
+
+    /* Surface and Background Colors */
+    --color-surface: #121212; /* Almost black background */
+    --color-surface-variant: #1e1e1e; /* Darker gray for container backgrounds */
+    --color-on-surface-variant: #e0e0e0; /* Light gray text for readability */
+
+    /* Feedback Colors */
+    --color-success: #43a047; /* Green for success */
+    --color-on-success: #ffffff; /* White text on green */
+    --color-error: #e53935; /* Red for errors */
+    --color-on-error: #ffffff; /* White text on red */
+    --color-warning: #ffeb3b; /* Yellow for warnings */
+    --color-on-warning: #000000; /* Black text on yellow */
+    --color-info: #0288d1; /* Blue for information */
+    --color-on-info: #ffffff; /* White text on blue */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #e53935, #b71c1c); /* Red gradient */
+    --gradient-secondary: linear-gradient(135deg, #b71c1c, #f44336); /* Dark to light red gradient */
+    --gradient-background: linear-gradient(to bottom, #121212, #1e1e1e); /* Dark gradient background */
+
+    /* Typography */
+    --color-text: #e0e0e0; /* Light gray for general text */
+    --color-text-heading: #ffffff; /* White for headings */
+    --color-text-subtle: #b0b0b0; /* Subtle gray for less emphasized text */
+    --color-link: #e53935; /* Red links */
+    --color-link-visited: #b71c1c; /* Darker red for visited links */
+    --color-mark: #f44336; /* Marked text with lighter red */
+    --color-blockquote-border: #b71c1c; /* Border for blockquotes */
+
+    /* Borders */
+    --color-border: #424242; /* Dark gray border */
+}
